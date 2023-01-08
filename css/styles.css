@@ -1,12 +1,21 @@
+/* Inside the password message area add a dotted square as a box to show the answer */
+/* Try a box shadow on the main card  */
+
 /* Globals */
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
+html,
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #7adac841;
 }
+
 /* Navigation */
 .navbar {
   background-color: #208674;
@@ -37,6 +46,7 @@ body {
   background-color: #fff;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 4px 5px 6px #646464;
 }
 .deco img {
   width: 100%;
@@ -47,6 +57,9 @@ body {
   width: 90%;
   height: 200px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form {
   display: flex;
@@ -63,6 +76,7 @@ body {
   height: 30%;
   border-radius: 50px;
   background-color: #208674;
+  border: none;
 }
 .btn h4 {
   color: #fff;
