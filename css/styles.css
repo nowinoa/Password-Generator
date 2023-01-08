@@ -66,17 +66,16 @@ body {
 }
 .password-answer {
   background-color: var(--secundary-color);
-  width: 90%;
-  height: 200px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .password-answer p {
-  font-size: 1.4rem;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 80%;
   font-weight: bold;
-  font-family: var(--font-secundary);
+  text-align: center;
 }
 .form {
   margin-top: 20px;
@@ -139,7 +138,7 @@ body {
     font-size: 1.5rem;
   }
   .password-answer p {
-    font-size: 1.2rem;
+    font-size: 15px;
   }
   .password-answer {
     width: 100%;
