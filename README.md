@@ -7,10 +7,10 @@ The motivation for this project was to provide a simple and convenient way for u
 https://nowinoa.github.io/Password-Generator/ 
 
 ## Table of Contents
-Installation
-Usage
-Credits
-License
+- Installation
+- Usage
+- Credits
+- License
 
 ## Installation
 To run this app, follow these steps:
