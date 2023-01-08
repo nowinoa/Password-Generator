@@ -1,10 +1,10 @@
 /* Globals */
 :root {
-  --font-primary: 'Raleway', sans-serif;
-  --font-secundary:  'Source Sans Pro', sans-serif;;
+  --font-primary: "Raleway", sans-serif;
+  --font-secundary: "Source Sans Pro", sans-serif;
   --primary-color: #208674;
   --secundary-color: #fff;
-  --third-color: #2F2E41;
+  --third-color: #2f2e41;
   --shadow-color: #494949;
 }
 *,
@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--secundary-color);
-
 }
 
 /* Navigation */
@@ -124,7 +123,6 @@ body {
     width: 70%;
     height: 50%;
   }
-  
 }
 
 @media (max-width: 468px) {
@@ -148,6 +146,5 @@ body {
   }
   .jumbotron {
     margin: 40px auto;
-  } 
-  
+  }
 }
