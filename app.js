@@ -124,7 +124,40 @@ var specialCharacters = [
     return arr[Math.floor(Math.random() * arr.length)];
   }
   // Function to generate password with user input
+  function generatePassword() {
+    var password = "";
+    var options = getPasswordOptions();
+    if (options.lowercase) {
+      password += getRandom(lowerCasedCharacters);
+    }
+    if (options.uppercase) {
+      password += getRandom(upperCasedCharacters);
+    }
+    if (options.numeric) {
+      password += getRandom(numericCharacters);
+      console.log(password);
+    }
+    if (options.special) {
+      password += getRandom(specialCharacters);
+    }
   
+    while (password.length < options.length) {
+      if (options.lowercase) {
+        password += getRandom(lowerCasedCharacters);
+      }
+      if (options.uppercase) {
+        password += getRandom(upperCasedCharacters);
+      }
+      if (options.numeric) {
+        password += getRandom(numericCharacters);
+        console.log(password);
+      }
+      if (options.special) {
+        password += getRandom(specialCharacters);
+      }
+    }
+    return password;
+  }
   // Get references to the #generate element
   var generateBtn = document.querySelector("#generate");
   
