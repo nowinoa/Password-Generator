@@ -91,12 +91,12 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions() {
   var length = prompt(
-    "'Length must be between 10 and 64. Enter the desired length of the password:'"
+    "Length must be between 10 and 64. Enter the desired length of the password:"
   );
 
-  while (length < 10 || length > 64) {
+  while (length < 10 || length > 64 || String) {
     length = prompt(
-      "Length must be between 10 and 64. Enter the desired length of the password:"
+      "Sorry buddy, length must be between 10 and 64. Enter the desired length of the password:"
     );
   }
   const lowercase = confirm("Include lowercase characters in the password?");
