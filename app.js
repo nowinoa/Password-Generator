@@ -93,8 +93,8 @@ function getPasswordOptions() {
   var length = prompt(
     "Length must be between 10 and 64. Enter the desired length of the password:"
   );
-
-  while (length < 10 || length > 64 || String) {
+ 
+  while (length < 10 || length > 64 || length.includes(...upperCasedCharacters) || length.includes(...lowerCasedCharacters) || length.includes(...specialCharacters)) {
     length = prompt(
       "Sorry buddy, length must be between 10 and 64. Enter the desired length of the password:"
     );
